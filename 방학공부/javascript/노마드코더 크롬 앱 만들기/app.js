@@ -78,4 +78,88 @@ console.log(daysOfWeek[5]);
 //Add one more day to the Array
 daysOfWeek.push("sun");
 console.log(daysOfWeek);
+
+
+
+//2-6. objects
+const player = {
+    name:"sung min",
+    points:12,
+    fat:true,
+}; 
+
+console.log(player);
+console.log(player.name);
+console.log(player["name"]);
+
+player.lastName = "potato";
+console.log(player);
+
+player.points = player.points + 10;
+console.log(player.points);
+
+
+
+//2-7 ~ 2-8. 함수
+
+function sayHello(nameOfPerson, age){
+    console.log("Hello! My name is " + nameOfPerson + " and I'm " + age);
+}
+sayHello("sung min", 23);
+sayHello("coco", 8);
+sayHello("albedo", 18);
+
+function plus(a, b){
+    console.log(a + b);
+}
+
+plus(1, 2);
+plus(20, 8);
+plus(-25, 24);
+
+const player = {
+    name: "sung min",
+    sayHello2: function(personName){
+        console.log("Hello! My name is " + personName);
+    }
+}
+
+player.sayHello2(player.name);
+player.sayHello2("albedo");
+
 */
+
+//2-11. 
+
+const calculator = {
+    plus: function(a, b){
+        alert(a + b);
+    },
+    minus: function(a, b){
+        alert(a - b);
+    },
+    div: function(a, b){
+        alert(a / b);
+    },
+    times: function(a, b){
+        alert(a * b);
+    },
+    power: function(a, b){
+        alert(a**b)
+    }
+};
+
+calculator.plus(3, 2);
+calculator.minus(3, 2);
+calculator.div(3, 2);
+calculator.times(3, 2);
+calculator.power(3, 2);
+
+const age = 85;
+
+function calculateKrAge(ageOfForeigner){
+    return ageOfForeigner + 2;
+}
+
+const krAge = calculateKrAge(age);
+console.log(krAge);
