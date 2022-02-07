@@ -163,7 +163,6 @@ function calculateKrAge(ageOfForeigner){
 const krAge = calculateKrAge(age);
 console.log(krAge);
 
-*/
 
 // 2-13 ~ 2-15. conditionals(조건문)
 const age = parseInt(prompt("How old are you?")); //잘 사용 안 함 (사이트 멈춤, 커스텀 불가 등등)
@@ -179,3 +178,19 @@ if(isNaN(age) || age < 0){
 } else{
     console.log("You can do wharever you want.");
 }
+
+*/
+
+//3-1.
+//const title = document.getElementById("title");
+
+const title = document.querySelector(".hello h1");
+
+console.log(title);
+
+function handleTitleClick(){
+
+    title.classList.toggle("clicked");
+}
+
+title.addEventListener("click", handleTitleClick);
